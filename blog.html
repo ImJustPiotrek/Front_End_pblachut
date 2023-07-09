@@ -23,6 +23,27 @@
 <main class="main">
     <section class="articles">
 
+		<script>
+    $(document).ready(function() {
+      $.ajax({
+        url: "http://www.mocky.io/v2/5d0da8313400007c00ca4a38",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+          $("#result").text(JSON.stringify(data));
+        },
+        error: function(xhr, status, error) {
+          console.log("Wystąpił błąd: " + error);
+        }
+      });
+    });
+  </script>
+  
+  
+  
+	<div id="result"></div>
+	
+	
     </section>
 </main>
 <aside class="aside">
@@ -36,7 +57,7 @@
     </ul>
 </aside>
 <footer class="footer">
-    Lab 6 Paweł Pustelnik
+    blog piotr blachut 2023
 </footer>
 </body>
 </html>
